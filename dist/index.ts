@@ -1,3 +1,8 @@
+import { CoinType } from "./CoinType.js";
+alert(2);
+
+const c : number = CoinType.dollar;
+
 function getAverage():number{
     let arrayStr : string = prompt("please enter an array of numbers: ") ?? "null";
     let arr : Array<string>;
@@ -30,10 +35,8 @@ function sortList() : Array<number>{
     let arr : Array<number> = arrayStr.split(',').map((value : string) => {
         return parseInt(value);
     });
-    let sorted : Array<number> = arr.sort();
+    let sorted : Array<number> = arr.sort((a : number,b : number) => a-b);
     return sorted;
 }
 
-const arr = [1,18,7];
-alert(arr.sort());
-//alert(sortList());
+alert(sortList());

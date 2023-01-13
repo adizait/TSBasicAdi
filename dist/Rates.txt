@@ -1,0 +1,6 @@
+dollar: 3.4
+euro: 3.7
+shekel: 1
+pezo: 0.062
+pound: 4.18
+yen: 0.026 
